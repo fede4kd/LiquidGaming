@@ -1,0 +1,83 @@
+$Color-lindo:  #17cdd4;
+
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.78);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+    img {
+        margin-top: 20px;
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 20px;
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+.mov {
+    transition: transform 0.2s ease-out;
+
+    .mov:hover {
+        transform: scale(1.03,1.03);
+    }
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+
+    iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+.btn-outline-success {
+    color: $Color-lindo;
+    border-color: $Color-lindo;
+
+    .btn-outline-success:hover {
+        color: #fff;
+        background-color: #07abba;
+        border-color: $Color-lindo;
+    }
+}
+
+#valor {
+    color: $Color-lindo;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#ea {
+   color: $Color-lindo;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .box {
+    @include sizes(500px, 50px);
+ }
+ 
+
+
+
+
+ 

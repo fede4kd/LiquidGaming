@@ -1,0 +1,226 @@
+$light-green: #17cdd4;
+$other-grern: #07abba;
+$rem0-25: 0.25rem;
+
+body {
+	background-image: url("img/fondo2.jpg");
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #e6eae4;
+    text-align: center;
+    background-color: #495057;
+}
+
+#qs h3 {
+   color: $light-green;
+}
+
+.bg-light {
+    background-color: black!important;
+}
+
+.btn-outline-success {
+    color: $light-green;
+    border-color: $light-green;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: $other-grern;
+    border-color: $light-green;
+}
+
+.navbar-toggler {
+    padding: $rem0-25 $rem0-25*3;
+    font-size: $rem0-25*5;
+    line-height: 1;
+    background-color: #17ced442;
+    border: 1px solid $other-grern;
+    border-radius: $rem0-25;
+}
+
+.navbar-light {
+
+    .navbar-brand {
+        color: white;
+
+        &:focus,
+        &:hover {
+            color: $light-green;
+        }
+    }
+
+    .navbar-nav {
+    
+        .nav-link {
+            color: white;
+        }
+
+        .active>.nav-link, 
+        .nav-link.active, 
+        .nav-link.show, 
+        .show>.nav-link {
+            color: #f8f9fa;
+        }
+    }
+}
+
+    .navbar-nav .nav-link:focus, 
+    .navbar-nav .nav-link:hover {
+        color: $light-green;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: black;
+    background-clip: padding-box;
+    border: 1px solid rgba(139, 211, 23, 0.15);
+    border-top-color: rgba(139, 211, 23, 0.15);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgba(139, 211, 23, 0.15);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgba(139, 211, 23, 0.15);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgba(139, 211, 23, 0.15);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: $rem0-25;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: $rem0-25 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: $light-green;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: black;
+    border: 0;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.container {
+	margin-top: 20px;
+	width: 80%;
+}
+
+
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.78);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: $rem0-25;
+
+    img {
+        margin-top: 20px;
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 20px;
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+.mov {
+	transition: transform 0.2s ease-out;
+
+
+    &:hover {
+	    transform: scale(1.03,1.03);
+    }
+}
+
+
+footer { 
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 50px;
+	clear: both;
+}
+
+#c { color: grey;
+
+}
+
+#valor {
+    color: $light-green;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#ea {
+   color: $light-green;
+}
+
+
+.social-icon {
+	width: 25px;
+	height: 25px;
+	margin: 0 5px;
+}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+
+    iframe{
+        left:0;
+     top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}    
