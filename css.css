@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     background-image: url("img/fondo2.jpg");
@@ -29,12 +30,28 @@ body {
     border-color: #17cdd4;
   }
   
+h3{
+  font-family: 'Orbitron', sans-serif;
+}
+  
+  .nosotros p{
+    font-family: 'Roboto', sans-serif;
+  }
+  .nosotros h3{
+    font-family: 'Orbitron', sans-serif;
+  }
+
   .btn-outline-success:hover {
     color: #fff;
     background-color: #07abba;
     border-color: #17cdd4;
   }
-  
+  #dire{
+    font-family: 'Orbitron', sans-serif;
+  }
+  #dc{
+    font-family: 'Orbitron', sans-serif;
+  }
   .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -65,12 +82,22 @@ body {
     color: #17cdd4;
   }
   
+  .nav-link{
+    font-family: 'Orbitron', sans-serif;
+  }
+
   .dropdown-item:focus, .dropdown-item:hover {
     color: white;
     text-decoration: none;
     background-color: black;
   }
   
+.carousel-inner h3{
+  font-family: 'Orbitron', sans-serif;
+}
+.carousel-inner p{
+font-family: 'Roboto', sans-serif;
+}
   .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -109,6 +136,7 @@ body {
   }
   
   .dropdown-item {
+    font-family: 'Orbitron', sans-serif;
     display: block;
     width: 100%;
     padding: 0.25rem 1.5rem;
@@ -142,7 +170,13 @@ body {
     width: 80%;
   }
   
-  
+  .card h4{
+    font-family: 'Orbitron', sans-serif;
+  }
+  .card p{
+    font-family: 'Roboto', sans-serif;
+  }
+
   .card {
     position: relative;
     display: -ms-flexbox;
@@ -272,6 +306,7 @@ body {
 
 
 .btn {
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
 }
   /*# sourceMappingURL=nuevo.css.map */
