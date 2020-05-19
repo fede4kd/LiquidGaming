@@ -455,5 +455,11 @@ body.scrollable {
   
 }
 
+#error {
+  color: #17cdd4;
+  margin-top: 30px;
+  font-family: 'Orbitron', sans-serif;
+}
+
 
   /*# sourceMappingURL=nuevo.css.map */
