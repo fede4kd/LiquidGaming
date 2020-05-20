@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css.css">
 
     <title>Lg Contacto</title>
-    <link rel="icon" href="img/lg.png">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -107,20 +106,24 @@
           </div>
 
           <p>Estámos esperando tu mensaje. </p>
-          <br>
+          
+          
 
           <!--Body-->
+          <form name="form1" method="POST" onsubmit="return Comprobar(this)" 
+              action= "mailto:4kdweb@gmail.com?subject=asunto" enctype="label/plain" >
+          
           <div class="md-form">
             <i class="fas fa-user prefix grey-text"></i>
             <label for="form-name">Nombre</label>
-            <input type="text" id="form-name" class="form-control">
+            <input type="text" id="form-name" class="form-control" required>
             
           </div>
 
           <div class="md-form">
             <i class="fas fa-envelope prefix grey-text"></i>
             <label for="form-email">Email</label>
-            <input type="text" id="form-email" class="form-control">
+            <input type="text" id="form-email" class="form-control" required>
             
           </div>
 
@@ -134,7 +137,7 @@
           <div class="md-form">
             <i class="fas fa-pencil-alt prefix grey-text"></i>
             <label for="form-text">Mensaje</label>
-            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+            <textarea id="form-text" class="form-control md-textarea" rows="3" required></textarea>
             
           </div>
 
@@ -165,8 +168,8 @@
       <div class="row text-center">
         <div class="col-md-4">
           <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
-          <p>Montevideo, Andes 1342</p>
-          <p>Uruguay</p>
+          <p>Dirección:</p>
+          <p>Montevideo, Andes 1342<br> Uruguay</p>
         </div>
 
         <div class="col-md-4">
@@ -177,6 +180,7 @@
 
         <div class="col-md-4">
           <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+          <p>Correo electrónico:</p>
           <p>4kdweb@gmail.com</p>
         </div>
       </div>
@@ -347,10 +351,31 @@
 </footer>
 <!-- Footer -->
 
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+              });
+          }, false);
+      })();
+    </script>
+
+
   </body>
 </html>
