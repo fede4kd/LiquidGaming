@@ -462,5 +462,19 @@ body.scrollable {
   font-family: 'Orbitron', sans-serif;
 }
 
+#face {
+  width: 20px; height: 20px;
+}
 
+#twit {
+  width: 20px; height: 20px;
+}
+
+#link {
+  width: 20px; height: 20px;
+}
+
+#ig {
+  width: 20px; height: 20px;
+}
   /*# sourceMappingURL=nuevo.css.map */
